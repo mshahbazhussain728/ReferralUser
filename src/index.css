@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "DM Sans", sans-serif;
+  list-style: none;
+}
+
+.sidebar-svg svg path {
+  fill: white !important;
+}
+/* 
+.sidebar-prem-svg svg path[fill="white"] {
+  fill: #691188 !important;
+}
+
+.sidebar-prem-svg svg path[fill="#525451"] {
+  fill: white !important;
+} */
+
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.img_loader {
+  animation: puff 1s infinite;
+}
+
+.select_scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.hoverTransetion {
+  transition: all 0.3s ease-in-out;
+}
+
+.hoverTransetion:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.follow-up-container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.react-tel-input .flag-dropdown {
+  border: none !important;
+  border-right: 1px solid #cacaca !important;
+}
+
+@keyframes puff {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
