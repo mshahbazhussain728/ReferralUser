@@ -3383,7 +3383,7 @@ export const ShareModal = ({ onClose }) => {
   const buildCouponText = () =>
     // `🎉 Use my coupon code *${couponCode}* on Famocare and get exclusive rewards!\n` +
     // `Join Famocare using my referral link: https://referral.famocare.com/${couponCode}`;
-     `Use my coupon code *${couponCode}* on Famocare and get exclusive rewards!\n` +
+     `Use my coupon code *${couponCode}* on Famocare to get a Free Subscription!\n` +
     `Join Now: ${REFERRAL_BASE_URL}`;
 
   const getCouponShareUrl = (label) => {
