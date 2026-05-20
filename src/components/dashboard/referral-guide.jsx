@@ -116,9 +116,7 @@ export const ReferralGuide = ({ iosHandler }) => {
           <StepIndecator heading={2} containerClassName="absolute -left-[50px]" />
           <BorderLine />
           <p className="px-3 py-[7.2px] border border-[#E0E0E0] rounded-[7.2px] text-xs font-medium">
-            Any one can download and install the app using this link and will
-            get 2$ discount on monthly subscription or 20$ discount on yearly
-            subscription
+            Any one can download and install the app using this link 
           </p>
         </div>
 
