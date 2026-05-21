@@ -112,27 +112,33 @@ export const CouponHistoryTableRows = ({ data }) => {
         const { bg, text } = getStatusStyles(actualStatus);
 
         return (
-          <div
-            key={index}
-            className="bg-white hover:bg-tableHoverColor rounded-[5px] py-[26px] px-10 grid grid-cols-[minmax(120px,_2fr)_minmax(150px,_3fr)_minmax(150px,_3fr)_minmax(150px,_3fr)_minmax(100px,_1fr)_minmax(120px,_2fr)] items-center"
-          >
+          // <div
+          //   key={index}
+          //   className="bg-white hover:bg-tableHoverColor rounded-[5px] py-[26px] px-10 grid grid-cols-[minmax(120px,_2fr)_minmax(150px,_3fr)_minmax(150px,_3fr)_minmax(150px,_3fr)_minmax(100px,_1fr)_minmax(120px,_2fr)] items-center"
+          // >
+
+<div
+  key={index}
+  className="bg-white hover:bg-tableHoverColor rounded-[5px] py-[26px] px-10 grid grid-cols-[minmax(100px,_2fr)_minmax(100px,_3fr)_minmax(150px,_3fr)_minmax(150px,_3fr)_minmax(100px,_1fr)_minmax(120px,_2fr)] items-center gap-x-4"
+>
+
             <span className="text-base font-medium capitalize">
               {item?.type}
             </span>
 
-            <span className="text-base font-medium flex items-center justify-center">
+            <span className="text-base font-medium flex items-center justify-center ml-[-60px]">
               {item?.coupon}
             </span>
 
-            <span className="text-base font-medium flex items-center justify-center">
+            <span className="text-base font-medium flex items-center justify-center whitespace-nowrap">
               {formatDate(item?.createdAt)}
             </span>
 
-            <span className="text-base font-medium flex items-center justify-center ml-3 whitespace-nowrap">
+            <span className="text-base font-medium flex items-center justify-center whitespace-nowrap ml-[45px]">
               {formatDate(item?.expiryDate)}
             </span>
 
-            <span className="text-base font-medium flex items-center justify-center">
+            <span className="text-base font-medium flex items-center justify-center ml-5">
               {item?.points}
             </span>
 
